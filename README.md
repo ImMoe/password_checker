@@ -1,2 +1,2 @@
-# password_checker
-Password checker for stronger passwords.
+# Password Check
+Checks passwords and gives hint for improvements to get a stronger password.
