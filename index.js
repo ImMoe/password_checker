@@ -25,7 +25,7 @@ function password_check(event) {
   if (value.length < 5) {
     response(
       "Password strength: Weak",
-      "Use a password with 6 letters or above."
+      "Your password is too short. Use atleast 8 letter/digits"
     );
     password_length.classList.remove("check");
   } else {
