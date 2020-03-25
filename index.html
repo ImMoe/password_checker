@@ -14,21 +14,33 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
-  <body class="bg-light">
+  <body>
     <div class="container">
-      <div class="row">
+      <div class="row animated bounceInLeft">
         <div class="col-sm-12 col-md-8 col-lg-6 col-xl-5 mx-auto">
+          <img src="images/lock.png" alt="Secret lock" id="logo" class="mb-3" />
           <div class="card card-body">
-            <h3 class="lead">Is my password secure?</h3>
+            <h3 class="lead">How secure is your password?</h3>
             <input
-              type="text"
+              type="password"
               id="password"
               placeholder="Enter password."
               class="form-control my-2"
             />
-            <p id="hint" class="alert alert-info text-center px-0"></p>
+            <p id="hint" class="alert alert-info text-center px-0 mt-2"></p>
+            <ul class="mt-1">
+              <li id="pass_length">Password is 6 letter or more.</li>
+              <li id="pass_upper">
+                Password is using uppercased letter or a digit.
+              </li>
+              <li id="pass_symbol">Password is using a symbol.</li>
+            </ul>
             <p id="details"></p>
           </div>
         </div>
